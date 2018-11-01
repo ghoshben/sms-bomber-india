@@ -12,7 +12,7 @@ banner='''
 print (banner)
 number=input("Enter number:")
 number=str(number)
-i=input("Enter number of loops:")
+i=int(input("Enter number of loops:"))
 for x in range(0, i):
 	print ('\x1b[6;30;42m' +'Loop No:'+ str(x) + '\x1b[0m')
 	url='''curl --data "txtAppUrlMobileNo='''+number+'''" www.savingo.in/includes/sms_app_url.php --referer http://www.savingo.in/sendapp.php -A "Mozilla/5.0 (Linux; Android 4.0.4; Galaxy Nexus Build/IMM76B) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.133 Mobile Safari/535.19"'''
